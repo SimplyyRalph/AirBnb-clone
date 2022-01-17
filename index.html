@@ -275,7 +275,7 @@
 
         <div class="main_map">
             <div class="main_googleMap">
-                <span>Map</span>
+                <div id="map"></div>
             </div>
         </div>
     </section>
@@ -327,6 +327,18 @@
     </footer>
 
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBLuXc5z0kipi2uBszXijaup_7IKao8G4&callback=initMap&v=weekly" async></script>
+    <script>   
+    function initMap() {
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 30,
+                    lng: 150,
+                },
+                zoom: 8
+            })
+        }
+    </script>
 </body>
 
 </html>

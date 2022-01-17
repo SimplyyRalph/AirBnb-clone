@@ -320,13 +320,12 @@ body {
 
 /* /MainBody Listing */
 
-/* Map */
+/* Map // AIzaSyCuwhlaDCn92gM3hGNFn5CdwICpaN - kD68*/
 .main {
     position: relative;
     padding-top: 80px;
 }
 .main_map {
-    background: red;
     width: calc(100% - 840px);
     position: absolute;
     top: 0;
@@ -342,6 +341,10 @@ body {
     top: 0;
 }
 
+#map {
+    height: 100%;
+    width: 100%;
+}
 /* footer  */
 
 footer {
